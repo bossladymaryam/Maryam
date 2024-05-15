@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle - Fitness & Healthy Lifestyle</title>
+    <!-- Link Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="Maryam.css">
+</head>
+
+<body>
+    <!-- Bootstrap Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="home.html">Fitness & Healthy Lifestyle</a>
+            </div>
+            
+            <!-- Moved Toggle Button Outside of the navbar-header but still inside container-fluid -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Nav Items Here -->
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fitness.html">Fitness Routines</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lifestyle.html">Lifestyle</a></li>
+                        <li class="nav-item"><a class= "nav-link" href="nutrition.html">Nutrition</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cal.html">Calculter</a></li>
+                        <li class="nav-item"><a class="nav-link" href="meal.html">Meal Planner</a></li>
+                        <li class="nav-item"><a class="nav-link" href="conta.html">Contact us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dashbo.html">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gyms.html">Gyms</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Account</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="registration.html">Sign Up</a></li>
+                                <li><a class="dropdown-item" href="signin.html">Login</a></li>
+                                </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+    <h2>Meal Planner</h2>
+    <form id="mealForm">
+        <div class="form-group">
+            <label for="dayOfWeek">Day of Week:</label>
+            <select id="dayOfWeek" class="form-control">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="mealType">Meal Type:</label>
+            <select id="mealType" class="form-control">
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+                <option value="Snack">Snack</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="mealDescription">Meal Description:</label>
+            <input type="text" id="mealDescription" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Meal</button>
+    </form>
+    <!-- Placeholders for each day's meals -->
+    <div id="mondayMeals"><h3>Monday</h3></div>
+    <div id="tuesdayMeals"><h3>Tuesday</h3></div>
+    <div id="wednesdayMeals"><h3>Wednesday</h3></div>
+    <div id="thursdayMeals"><h3>Thursday</h3></div>
+    <div id="fridayMeals"><h3>Friday</h3></div>
+    <div id="saturdayMeals"><h3>Saturday</h3></div>
+    <div id="sundayMeals"><h3>Sunday</h3></div>
+    </div>
+
+    <script src="mealplanner.js"></script>
+
+    <!-- Footer with copyright information -->
+    <footer>
+        <p>&copy; 2024 Your Fitness & Healthy Lifestyle</p>
+    </footer>
+</body>
+
+</html>
+

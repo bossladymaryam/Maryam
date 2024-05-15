@@ -1,0 +1,405 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('eyesword.webp');
+    color: #333;
+    line-height: 1.6;
+    padding-top: 100px; /* Adjusted for fixed header */
+    padding-bottom: 100px;
+    background-attachment: fixed; /* Gives a nice parallax-like effect */
+}
+
+.navbar-toggler {
+    position: fixed;
+    right: 0.5cm;
+    top: 1rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for legibility */
+    border-radius: 8px; /* Soft rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* Table Base Styles */
+table {
+    width: 100%; /* Full width to use available space */
+    border-collapse: collapse; /* Ensures borders between cells are merged */
+    margin-top: 20px; /* Adds space above the table */
+    background-color: #fff; /* White background for clarity */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+}
+
+/* Table Headers */
+th {
+    background-color: #abcab3; /* Dark green background for headers */
+    color: white; /* White text color for contrast */
+    font-weight: bold; /* Bold font for headers */
+    text-align: left; /* Align text to the left */
+    padding: 12px 15px; /* Padding for spacing within cells */
+    border-bottom: 2px solid #ddd; /* Light grey border for separation */
+}
+
+/* Table Cells */
+td {
+    padding: 12px 15px; /* Padding for spacing within cells */
+    border-bottom: 1px solid #ddd; /* Light grey border for separation between rows */
+    color: #333; /* Dark grey text for readability */
+}
+
+/* Hover Effects for Rows */
+tr:hover {
+    background-color: #f5f5f5; /* Light grey background on row hover for highlight */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    th, td {
+        padding: 10px; /* Smaller padding for smaller screens */
+    }
+}
+
+
+
+
+nav.navbar {
+    background-color: #fff; /* Light theme for the navbar */
+    top: 0;
+    z-index: 1000; 
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-nav {
+    font-size: 16px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.nav-item{
+    display: block;
+}
+
+.nav-link {
+    color: #555 !important; /* More neutral, professional color */
+    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #269d44 !important; /* Highlight color */
+    background-color: transparent;
+}
+
+footer {
+    background-color: #f8f9fa;
+    color: #666;
+    padding: 2rem;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Enhancements for Headings and Text */
+h2, h3 {
+    color: #2c3e50; /* Darker blue for better readability */
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 30px; /* Larger size for main headings */
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666; /* Softer color for reading comfort */
+}
+
+/* List Styling */
+li {
+    line-height: 1.75;
+}
+
+/* Image Links Styling for Social Media */
+a img {
+    transition: transform 0.3s ease;
+}
+
+a img:hover {
+    transform: scale(1.1); /* Slightly enlarge images on hover */
+}
+
+
+
+.contact-section {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Maintain legibility */
+    border-radius: 8px; /* Adds rounded corners */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-section form {
+    max-width: 600px; /* Limit the form width for better aesthetics */
+    margin: auto;
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: .5rem;
+    color: #333;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem; /* Add some space below each input */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-section button {
+    background-color: #0e4012;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-section form {
+        width: 90%; /* Allow a bit more margin on smaller screens */
+    }
+
+    body {
+        padding-top: 60px; /* Reduce padding for smaller headers */
+    }
+
+    .navbar-toggler {
+        right: 10px; /* Adjust position for smaller screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: center; /* Center items for larger screens */
+    }
+
+    .nav-link {
+        padding-left: 1rem;
+        padding-right: 1rem; /* Add more horizontal padding */
+    }
+
+    .contact-section form {
+        width: 50%; /* Larger forms on larger screens */
+    }
+}
+
+
+
+/* trying the register section*/
+.container mt-6 {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Maintain legibility */
+    border-radius: 8px; /* Adds rounded corners */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.mb-2 form {
+    max-width: 600px; /* Limit the form width for better aesthetics */
+    margin: auto;
+}
+
+.mb-2 label {
+    display: block;
+    margin-bottom: .5rem;
+    color: #333;
+}
+
+
+.mb-2 textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 1rem; /* Add some space below each input */
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.container mt-6 {
+    background-color: #0e4012;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+/* General Form Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+/* Specific Page Container Styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Responsive Styles */
+
+/* Universal Styles */
+body, h1, h2, h3, p {
+    font-family: 'Open Sans', sans-serif; /* Consistent font across all pages */
+}
+
+/* Header and Navigation Bar */
+nav.navbar {
+    background-color: #fff; /* Consistent background color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    padding: 20px 0; /* Consistent padding */
+}
+
+/* Main Content Styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for legibility */
+    border-radius: 8px; /* Soft rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Consistent shadow for depth */
+}
+
+
+
+
+/* Style for the main container of the User Dashboard */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for legibility */
+    border-radius: 8px; /* Soft rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Consistent shadow for depth */
+    margin-top: 30px; /* Adds margin on top for some space below the navbar */
+    margin-bottom: 30px; /* Adds space at the bottom before the footer */
+}
+
+/* Styles for each section inside the main tag */
+section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light grey background for each section for distinction */
+    border-radius: 4px; /* Slightly rounded corners for each section */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for each section */
+}
+
+/* Header styles within the sections */
+h1, h2 {
+    color: #2c3e50; /* Dark blue for better readability */
+}
+
+/* Paragraph styles within the sections */
+p {
+    color: #666; /* Grey text color for readability */
+    font-size: 16px; /* Slightly larger font size for readability */
+    line-height: 1.5; /* Line height for better text spacing */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 100%; /* Full width for smaller screens */
+        padding: 15px; /* Slightly less padding for smaller screens */
+    }
+
+    section {
+        margin-top: 15px; /* Smaller margin for compact layout */
+    }
+}
+
+@media (min-width: 992px) {
+    section {
+        padding: 25px; /* More padding for larger screens */
+    }
+}
+
+/* for the gyms page*/
+#map {
+    height: 10cm;
+    width: 100%;
+}
+
